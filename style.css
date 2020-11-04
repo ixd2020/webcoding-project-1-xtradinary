@@ -1,0 +1,33 @@
+
+
+.logo {
+  height: 50px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  flex: 0.5;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+}
+
+.navbar li {
+  list-style-type: none;
+}
+
+.navbar li a {
+  text-decoration: none;
+  color: Black;
+  padding: 25px 10px;
+}
+
+.navbar li a:hover {
+  background-color: #e8e8e8;
+  color: red;
+  text-decoration: underline;
+  transition: 0.3s;
+}
