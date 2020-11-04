@@ -1,4 +1,6 @@
-
+*{
+  background-color: red;
+}
 
 .logo {
   height: 50px;
