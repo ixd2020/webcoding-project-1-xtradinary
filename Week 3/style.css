@@ -1,5 +1,7 @@
 * {
   font-family: aktiv grotesk, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 .logo {
@@ -10,6 +12,8 @@ nav {
   display: flex;
   justify-content: space-between;
   flex: 0.5;
+  padding: 10px 0 10px 10px;
+  background-color: #e9e9e9;
 }
 
 .navbar {
@@ -28,8 +32,26 @@ nav {
 }
 
 .navbar li a:hover {
-  background-color: #e8e8e8;
+  background-color: #c5c5c5;
   color: red;
   text-decoration: underline;
   transition: 0.3s;
+}
+
+h1 {
+  margin: 20px;
+}
+
+section p {
+  margin: 20px;
+}
+
+
+footer {
+  display: flex;
+  justify-content: center;
+  background-color: Black;
+  color: white;
+  margin: 0;
+  padding: 10px;
 }
