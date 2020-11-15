@@ -45,6 +45,10 @@ section {
   height: 100vh;
 }
 
+.vertnav {
+  width: 15%;
+}
+
 
 .vertbar {
   display: flex;
@@ -53,8 +57,9 @@ section {
 
 .vertbar li {
   display: flex;
+  justify-content: center;
   list-style-type: none;
-  padding: 5px 30px;
+  padding: 20px 10px;
   margin: 10px;
   background-color: grey;
 }
@@ -62,7 +67,6 @@ section {
 .vertbar li a {
   text-decoration: none;
   color: Black;
-  padding: 5px 30px;
 
 }
 
@@ -74,6 +78,10 @@ section {
 }
 
 /*hero*/
+.hero {
+  width: 85%;
+}
+
 h1 {
   margin: 20px;
 }
