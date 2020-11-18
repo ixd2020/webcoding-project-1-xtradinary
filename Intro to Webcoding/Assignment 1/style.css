@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'aktiv grotesk', sans-serif;
+  background-color: grey;
 }
 
 /*nav*/
@@ -42,7 +43,7 @@ nav {
 
 .navi li a {
   text-decoration: none;
-  color: white;
+  color: black;
   font-size: 14px;
 }
 
@@ -66,6 +67,7 @@ nav {
     display: block;
     cursor: pointer;
     position: relative;
+margin-top: 30px;
   }
 
   .bars:hover {
@@ -88,9 +90,8 @@ nav {
 
   .navbar li:not(:first-child) a {
     font-size: 20px;
-    margin: 40px 0 20px 0;
+    margin: 10px
   }
 
   .navbar li:not(:last-child) a {
-    margin: 20px 0 0 0;
   }
