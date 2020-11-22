@@ -69,12 +69,10 @@ button {
   border: none;
 }
 
-button a {
-  color: white;
-}
-
 button a i {
-  background-color: transparent;
+  color: white;
+  padding: 5px;
+  background-color: grey;
 }
 
 /*section*/
@@ -129,6 +127,7 @@ footer h6 {
   justify-content: space-between;
   align-items: center;
   width: 33.33%;
+  margin-right: 50px;
 }
 
 .foot img {
@@ -193,4 +192,31 @@ footer h6 {
   .navbar li:not(:last-child) a {}
 }
 
-@media screen and (max-width:865px) {}
+@media screen and (max-width:700px) {
+  .hero {
+    background-image: url(img/mainmobile.jpg);
+  }
+
+  .mhrise {
+    background-image: url(img/mhrisemobile.jpg);
+  }
+
+  .mhmovie {
+    background-image: url(img/mhmoviemobile.jpg);
+  }
+
+
+  .mhrise img {
+    width: 100px;
+  }
+
+footer {
+  flex-direction: column-reverse;
+align-items: center;
+}
+
+.foot {
+  margin: 0 0 10px 0;
+}
+
+}
