@@ -3,7 +3,13 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'aktiv grotesk', sans-serif;
-  background-color: #af9483;
+  background-color: #000;
+}
+
+body {
+  scroll-snap-type: mandatory;
+  scroll-snap-points-y: repeat(100vh);
+  scroll-snap-type: y mandatory;
 }
 
 /*nav*/
@@ -42,12 +48,13 @@ nav {
 
 .navi li a {
   text-decoration: none;
-  color: black;
+  color: white;
   font-size: 14px;
 }
 
 .bars {
   display: none;
+  color: white;
 }
 
 /*main*/
@@ -58,6 +65,22 @@ nav {
   background-size: cover;
 }
 
+/*section*/
+.neworks {
+  scroll-snap-align: start;
+}
+
+.newworks h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  color: white;
+  font-size: 60px;
+  background-image: url(img/mhdark.jpg);
+  background-size: cover;
+}
 
 /*mhrise*/
 .mhrise {
@@ -76,14 +99,10 @@ nav {
   background-position: center;
 }
 
-
-
-
-
-
-
-
-
+/*footer*/
+footer {
+  height: 150px;
+}
 
 /*media*/
 @media screen and (max-width:1100px) {
@@ -101,7 +120,7 @@ nav {
     display: block;
     cursor: pointer;
     position: relative;
-margin-top: 30px;
+    margin-top: 30px;
   }
 
   .bars:hover {
@@ -127,5 +146,4 @@ margin-top: 30px;
     margin: 10px
   }
 
-  .navbar li:not(:last-child) a {
-  }
+  .navbar li:not(:last-child) a {}
