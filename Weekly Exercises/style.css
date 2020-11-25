@@ -41,7 +41,7 @@ nav {
 }
 
 /*vertbar*/
-section {
+.vertsection {
   display: flex;
 }
 
@@ -107,6 +107,10 @@ h1, h2, h3 {
   margin: 20px;
 }
 
+.hero4a h1 {
+  margin: 0;
+}
+
 section p {
   margin: 20px;
 }
@@ -121,7 +125,8 @@ section p {
 /*clearfix*/
 .clearfix {
   font-family: 'roboto', sans-serif;
-  margin: 20px;
+  margin: 20px 20px 0 20px;
+  height: 100vh;
 }
 
 .clearfix01, .clearfix02, .clearfix03 {
@@ -144,6 +149,14 @@ section p {
   float: left;
   width: 33.33%;
   padding: 40px 0;
+}
+
+.mouseedit {
+  margin: 20px;
+}
+
+#myBtn {
+  margin: 20px;
 }
 
 /*footer*/

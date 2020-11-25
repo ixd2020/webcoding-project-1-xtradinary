@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Week 6</title>
+  <title>Dom Test</title>
   <link rel="stylesheet" href="style.css">
   <script src="https://kit.fontawesome.com/0abe856548.js" crossorigin="anonymous"></script>
 </head>
@@ -31,6 +31,11 @@
       <h1 onclick="changeText(this)">Click on this text!</h1>
     </div>
 
+    <div class="mouseedit" onmouseover="mOver(this)" onmouseout="mOut(this)" style="background-color:#D94A38;width:200px;height:200px;padding:40px;">
+      Mouse Over Me</div>
+
+    <button id="myBtn">Try it</button>
+
   </section>
 
   <footer>
@@ -39,9 +44,22 @@
 
   <script>
     document.getElementById("demo").innerHTML = "Hello World!";
+
     function changeText(id) {
       id.innerHTML = "Ooops!";
     }
+
+    function mOver(obj) {
+      obj.innerHTML = "Thank You"
+    }
+
+    function mOut(obj) {
+      obj.innerHTML = "Mouse Over Me"
+    }
+
+    document.getElementById("myBtn").addEventListener("click", function() {
+      alert("Hello World!");
+    });
   </script>
 
 </body>
