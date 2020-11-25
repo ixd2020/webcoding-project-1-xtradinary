@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Week 6</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/0abe856548.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <nav>
+    <a href="index.html"><img src="img/ixd.png" alt="logo" class="logo"></a>
+
+    <ul class="navbar">
+      <li onclick="window.open('week3.html','_self')"><a href="week3.html">Week 3</a></li>
+      <li onclick="window.open('week4.html','_self')"><a href="week4.html">Week 4</a></li>
+      <li onclick="window.open('week4a.html','_self')"><a href="week4a.html">Week 4a</a></li>
+      <li onclick="window.open('week5.html','_self')"><a href="domtest.html">Dom Test</a></li>
+    </ul>
+  </nav>
+
+  <section>
+
+
+    <div class="hero">
+      <h1>Dom Test</h1>
+
+      <p id="demo"></p>
+
+      <h1 onclick="changeText(this)">Click on this text!</h1>
+    </div>
+
+  </section>
+
+  <footer>
+    <p>This is a footer™</p>
+  </footer>
+
+  <script>
+    document.getElementById("demo").innerHTML = "Hello World!";
+    function changeText(id) {
+      id.innerHTML = "Ooops!";
+    }
+  </script>
+
+</body>
+
+</html>
