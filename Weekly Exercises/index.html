@@ -6,6 +6,7 @@
   <title>Weekly Exercise</title>
   <link rel="stylesheet" href="style.css">
   <script src="https://kit.fontawesome.com/0abe856548.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/cocoen.min.css" />
 </head>
 
 <body>
@@ -13,6 +14,12 @@
     <a href="index.html"><img src="img/ixd.png" alt="logo" class="logo"></a>
 
     <ul class="navbar">
+      <li class="myMenu">
+        <a href="javascript:void(0)" class="bars" onclick="myFunction()">
+          <i class="fas fa-bars fa-2x"></i>
+        </a>
+      </li>
+
       <li onclick="window.open('week3.html','_self')"><a href="week3.html">Week 3</a></li>
       <li onclick="window.open('week4.html','_self')"><a href="week4.html">Week 4</a></li>
       <li onclick="window.open('week4a.html','_self')"><a href="week4a.html">Week 4a</a></li>
@@ -49,6 +56,20 @@
 
   </footer>
 
+  <!--javascript-->
+  <script>
+    function myFunction() {
+      var x = document.getElementById("topNav");
+      if (x.className === "myNav") {
+        x.className += " responsive";
+      } else {
+        x.className = "myNav";
+      }
+    }
+  </script>
+
+
 </body>
+
 
 </html>

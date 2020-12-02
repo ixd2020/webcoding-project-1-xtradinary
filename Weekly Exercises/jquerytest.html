@@ -5,7 +5,40 @@
   <meta charset="utf-8">
   <title></title>
   <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/0abe856548.js" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $("button").click(function() {
+        $("p.para001").css({
+          "background-color": "yellow",
+          "font-size": "200%"
+        });
+      });
+    });
+  </script>
+
+  <script>
+    $(document).ready(function() {
+      $("button").click(function() {
+        $("h1.head02, h2.head02, p.para02").addClass("blue");
+        $("div.iptext").addClass("important");
+      });
+    });
+  </script>
+  <style>
+    .important {
+      font-weight: bold;
+      font-size: xx-large;
+      border: 2px solid green;
+    }
+
+    .blue {
+      color: blue;
+    }
+  </style>
 </head>
+
 
 <body>
   <nav>
@@ -18,8 +51,30 @@
       <li onclick="window.open('domtest.html','_self')"><a href="domtest.html">Dom Test</a></li>
       <li onclick="window.open('jquerytest.html','_self')"><a href="jquerytest.html">jquerytest</a></li>
     </ul>
-
   </nav>
+
+  <h2 class="head01">This is a heading</h2>
+
+  <p class="para001" style="background-color:#ff0000">This is a paragraph.</p>
+  <p class="para001" style="background-color:#00ff00">This is a paragraph.</p>
+  <p class="para001" style="background-color:#0000ff">This is a paragraph.</p>
+
+  <p>This is a paragraph.</p>
+
+  <button>Set multiple styles for p</button>
+
+
+  <hr>
+
+  <h1 class="head02">Heading 1</h1>
+  <h2 class="head02">Heading 2</h2>
+
+  <p class="para02">This is a paragraph.</p>
+  <p class="para02">This is another paragraph.</p>
+
+  <div class="iptext">This is some important text!</div><br>
+
+  <button>Add classes to elements</button>
 
 </body>
 

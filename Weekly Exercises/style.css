@@ -40,6 +40,10 @@ nav {
   transition: 0.3s;
 }
 
+.bars {
+  display: none;
+}
+
 /*vertbar*/
 .vertsection {
   display: flex;
@@ -185,6 +189,7 @@ footer {
     display: block;
     cursor: pointer;
     position: relative;
+    margin-top: 30px;
   }
 
   .bars:hover {
@@ -207,12 +212,11 @@ footer {
 
   .navbar li:not(:first-child) a {
     font-size: 20px;
-    margin: 40px 0 20px 0;
+    margin: 10px
   }
 
-  .navbar li:not(:last-child) a {
-    margin: 20px 0 0 0;
-  }
+  .navbar li:not(:last-child) a {}
+}
 
   .clearfix01, .clearfix02, .clearfix03 {
     display: flex;
