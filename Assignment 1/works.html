@@ -35,48 +35,95 @@
 
   <!--main-->
   <main>
-
+    <div class="workshero">
+    </div>
   </main>
 
+  <!--backtotop-->
+  <button><a href="#topNav">
+      <i class="fas fa-chevron-up"></i>
+    </a></button>
 
-  <!--new works-->
-  <section class="newworks">
 
+  <!--slider-->
+  <section class="slider">
+    <h1>King of the Skies<br>Rathalos</h1>
+
+    <div class="cocoen ">
+      <img src="img/works/rathalos.jpg" alt="rathalos monster hunter 1">
+      <img src="img/mhw/rathalos.jpg" alt="rathalos monster hunter world">
+    </div>
+    <h2>Flagship Monster of Monster Hunter</h2>
   </section>
 
+
+  <!--All Flagship-->
+  <section class="allworks">
+    <div class="workscon">
+      <h1>All Flagship Monsters</h1>
+
+
+      <ul class="worksgallery">
+        <li><a data-fancybox="gallery" data-caption="Monster Hunter 2, Kushala Daora" href="img/works/kushaladaora.jpg"><img src="img/works/kushaladaora.jpg" alt="Kushala Daora"></a></li>
+        <li><a data-fancybox="gallery" data-caption="Monster Hunter Freedom 2, Tigrex" href="img/works/tigrex.jpg"><img src="img/works/tigrex.jpg" alt="Tigrex"></a></li>
+        <li><a data-fancybox="gallery" data-caption="Monster Hunter Freedom Unite, Nargacuga" href="img/works/narga.jpg"><img src="img/works/narga.jpg" alt="Nargacuga"></a></li>
+        <li><a data-fancybox="gallery" data-caption="Monster Hunter 3, Lagiacrus" href="img/works/lagiacrus.png"><img src="img/works/lagiacrus.png" alt="Lagiacrus"></a></li>
+        <li><a data-fancybox="gallery" data-caption="Monster Hunter 3rd Portable, Zinogre" href="img/works/zinogre.png"><img src="img/works/zinogre.png" alt="Zinogre"></a></li>
+        <li><a data-fancybox="gallery" data-caption="Monster Hunter 3 Ultimate, Brachydios" href="img/works/brachydios.jpg"><img src="img/works/brachydios.jpg" alt="brachydios"></a></li>
+        <li><a data-fancybox="gallery" data-caption="Monster Hunter F4, Gore Magala" href="img/works/goremagara.jpg"><img src="img/works/goremagara.jpg" alt="Gore Magara"></a></li>
+        <li><a data-fancybox="gallery" data-caption="Monster Hunter 4, Seregios" href="img/works/seregios.jpg"><img src="img/works/seregios.jpg" alt="Seregios"></a></li>
+        <li><a data-fancybox="gallery" data-caption="Monster Hunter X, Glavenus" href="img/works/glavenus.jpg"><img src="img/works/glavenus.jpg" alt="Glavenus"></a></li>
+        <li><a data-fancybox="gallery" data-caption="Monster Hunter Generations Ultimate, Valstrax" href="img/works/valstrax.jpg"><img src="img/works/valstrax.jpg" alt="Valstrax"></a></li>
+      </ul>
+
+    </div>
+  </section>
 
   <!--footer-->
   <footer>
     <h6>Kaname Fukioka by Xtradinary™</h6>
 
     <ul class="foot">
-    				<li class="facebook">
-    					<a href="https://www.facebook.com/monsterhunter" target="_blank">
-    						<img src="img/icons/fb.png" alt="facebook">
-    					</a>
-    				</li>
-    				<li class="twitter">
-    					<a href="https://twitter.com/MHinfo_en	" target="_blank">
-    						<img src="img/icons/tw.png" alt="twitter">
-    					</a>
-    				</li>
-    				<li class="instagram">
-    					<a href="https://www.instagram.com/monsterhuntergame/" target="_blank">
-    						<img src="img/icons/insta.png" alt="instagram">
-    					</a>
-    				</li>
-    				<li class="youtube">
-    					<a href="https://www.youtube.com/user/monsterhunter" target="_blank">
-    						<img src="img/icons/yt.png" alt="youtube">
-    					</a>
-    				</li>
-    			</ul>
+      <li class="facebook">
+        <a href="https://www.facebook.com/monsterhunter" target="_blank">
+          <img src="img/icons/fb.png" alt="facebook">
+        </a>
+      </li>
+      <li class="twitter">
+        <a href="https://twitter.com/MHinfo_en	" target="_blank">
+          <img src="img/icons/tw.png" alt="twitter">
+        </a>
+      </li>
+      <li class="instagram">
+        <a href="https://www.instagram.com/monsterhuntergame/" target="_blank">
+          <img src="img/icons/insta.png" alt="instagram">
+        </a>
+      </li>
+      <li class="youtube">
+        <a href="https://www.youtube.com/user/monsterhunter" target="_blank">
+          <img src="img/icons/yt.png" alt="youtube">
+        </a>
+      </li>
+    </ul>
 
   </footer>
 
 
 
   <!--javascript-->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+
+  <script src="js/cocoen.min.js"></script>
+  <script src="js/cocoen-jquery.min.js"></script>
+  <script>
+    $(function() {
+      $('.cocoen').cocoen();
+    });
+  </script>
+
+  <script src="dist/jquery.fancybox.min.js"></script>
+
+
   <script>
     function myFunction() {
       var x = document.getElementById("topNav");
