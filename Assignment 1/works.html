@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <title>Kaname Fujioka Works</title>
   <script src="https://kit.fontawesome.com/0abe856548.js" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <link rel="stylesheet" href="css/cocoen.min.css" />
   <link rel="stylesheet" href="dist/jquery.fancybox.min.css">
   <link rel="stylesheet" href="style.css">
@@ -40,7 +41,7 @@
   </main>
 
   <!--backtotop-->
-  <button><a href="#topNav">
+  <button class="btt"><a href="#topNav">
       <i class="fas fa-chevron-up"></i>
     </a></button>
 
@@ -54,6 +55,7 @@
       <img src="img/mhw/rathalos.jpg" alt="rathalos monster hunter world">
     </div>
     <h2>Flagship Monster of Monster Hunter</h2>
+    <p>Terrible wyverns called "Kings of the Skies". Along with Rathians, they stake wide territories centered around their nests. Rathalos descend on invaders from the sky, attacking with poison claws and breath of fire.</p>
   </section>
 
 
@@ -67,9 +69,15 @@
         <li><a data-fancybox="gallery" data-caption="Monster Hunter 2, Kushala Daora" href="img/works/kushaladaora.jpg"><img src="img/works/kushaladaora.jpg" alt="Kushala Daora"></a></li>
         <li><a data-fancybox="gallery" data-caption="Monster Hunter Freedom 2, Tigrex" href="img/works/tigrex.jpg"><img src="img/works/tigrex.jpg" alt="Tigrex"></a></li>
         <li><a data-fancybox="gallery" data-caption="Monster Hunter Freedom Unite, Nargacuga" href="img/works/narga.jpg"><img src="img/works/narga.jpg" alt="Nargacuga"></a></li>
+      </ul>
+
+      <ul class="worksgallery">
         <li><a data-fancybox="gallery" data-caption="Monster Hunter 3, Lagiacrus" href="img/works/lagiacrus.png"><img src="img/works/lagiacrus.png" alt="Lagiacrus"></a></li>
         <li><a data-fancybox="gallery" data-caption="Monster Hunter 3rd Portable, Zinogre" href="img/works/zinogre.png"><img src="img/works/zinogre.png" alt="Zinogre"></a></li>
         <li><a data-fancybox="gallery" data-caption="Monster Hunter 3 Ultimate, Brachydios" href="img/works/brachydios.jpg"><img src="img/works/brachydios.jpg" alt="brachydios"></a></li>
+      </ul>
+
+      <ul class="worksgallery">
         <li><a data-fancybox="gallery" data-caption="Monster Hunter F4, Gore Magala" href="img/works/goremagara.jpg"><img src="img/works/goremagara.jpg" alt="Gore Magara"></a></li>
         <li><a data-fancybox="gallery" data-caption="Monster Hunter 4, Seregios" href="img/works/seregios.jpg"><img src="img/works/seregios.jpg" alt="Seregios"></a></li>
         <li><a data-fancybox="gallery" data-caption="Monster Hunter X, Glavenus" href="img/works/glavenus.jpg"><img src="img/works/glavenus.jpg" alt="Glavenus"></a></li>
@@ -77,7 +85,37 @@
       </ul>
 
     </div>
+
+    <!--All Current Flagship-->
+    <div class="allcurrent workscon">
+      <h1>All Current Flagship Monsters</h1>
+
+
+      <ul class="worksgallery">
+        <li><a data-fancybox="gallery" data-caption="Monster Hunter 2, Kushala Daora" href="img/mhw/kushaladaora.jpg"><img src="img/mhw/kushaladaora.jpg" alt="Kushala Daora"></a></li>
+        <li><a data-fancybox="gallery" data-caption="Monster Hunter Freedom 2, Tigrex" href="img/mhw/tigrex.jpg"><img src="img/mhw/tigrex.jpg" alt="Tigrex"></a></li>
+        <li><a data-fancybox="gallery" data-caption="Monster Hunter Freedom Unite, Nargacuga" href="img/mhw/narga.jpg"><img src="img/mhw/narga.jpg" alt="Nargacuga"></a></li>
+      </ul>
+
+      <ul class="worksgallery">
+        <li><a data-fancybox="gallery" data-caption="Monster Hunter 3, Lagiacrus" href="img/mhw/lagiacrus.jpg"><img src="img/mhw/lagiacrus.jpg" alt="Lagiacrus"></a></li>
+        <li><a data-fancybox="gallery" data-caption="Monster Hunter 3rd Portable, Zinogre" href="img/mhw/zinogre.jpg"><img src="img/mhw/zinogre.jpg" alt="Zinogre"></a></li>
+        <li><a data-fancybox="gallery" data-caption="Monster Hunter 3 Ultimate, Brachydios" href="img/mhw/brachydios.jpg"><img src="img/mhw/brachydios.jpg" alt="brachydios"></a></li>
+      </ul>
+
+      <ul class="worksgallery">
+        <li><a data-fancybox="gallery" data-caption="Monster Hunter F4, Gore Magala" href="img/mhw/goremagara.jpg"><img src="img/mhw/goremagara.jpg" alt="Gore Magara"></a></li>
+        <li><a data-fancybox="gallery" data-caption="Monster Hunter 4, Seregios" href="img/mhw/seregios.jpg"><img src="img/mhw/seregios.jpg" alt="Seregios"></a></li>
+        <li><a data-fancybox="gallery" data-caption="Monster Hunter X, Glavenus" href="img/mhw/glavenus.jpg"><img src="img/mhw/glavenus.jpg" alt="Glavenus"></a></li>
+        <li><a data-fancybox="gallery" data-caption="Monster Hunter Generations Ultimate, Valstrax" href="img/mhw/valstrax.jpg"><img src="img/mhw/valstrax.jpg" alt="Valstrax"></a></li>
+      </ul>
+
+    </div>
   </section>
+
+  <div class="showbutton">
+    <button class="show">Show Current Flagship Monster Designs</button>
+  </div>
 
   <!--footer-->
   <footer>
@@ -135,6 +173,23 @@
     }
   </script>
 
+  <script>
+    $(document).ready(function() {
+      $("button").click(function() {
+        $(".workscon").css({
+          "display": "none",
+        });
+      });
+    });
+
+    $(document).ready(function() {
+      $("button").click(function() {
+        $(".allcurrent").css({
+          "display": "contents",
+        });
+      });
+    });
+  </script>
 
 
 </body>
