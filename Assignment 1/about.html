@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <title>Kaname Fujioka About</title>
   <script src="https://kit.fontawesome.com/0abe856548.js" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <link rel="stylesheet" href="css/cocoen.min.css" />
   <link rel="stylesheet" href="dist/jquery.fancybox.min.css">
   <link rel="stylesheet" href="style.css">
@@ -140,6 +141,19 @@
 
 
   <!--javascript-->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+
+  <script src="js/cocoen.min.js"></script>
+  <script src="js/cocoen-jquery.min.js"></script>
+  <script>
+    $(function() {
+      $('.cocoen').cocoen();
+    });
+  </script>
+
+  <script src="dist/jquery.fancybox.min.js"></script>
+
+
   <script>
     function myFunction() {
       var x = document.getElementById("topNav");
@@ -151,7 +165,23 @@
     }
   </script>
 
+  <script>
+    $(document).ready(function() {
+      $("button").click(function() {
+        $(".workscon").css({
+          "display": "none",
+        });
+      });
+    });
 
+    $(document).ready(function() {
+      $("button").click(function() {
+        $(".allcurrent").css({
+          "display": "contents",
+        });
+      });
+    });
+  </script>
 
 </body>
 
