@@ -136,7 +136,6 @@ nav {
 
 .allworks {
   width: 100%;
-  background-color: white;
   max-width: 1100px;
   margin: auto;
   text-align: center;
@@ -187,7 +186,6 @@ nav {
 /*current works*/
 .allcurrent {
   width: 100%;
-  background-color: white;
   max-width: 1100px;
   margin: auto;
   text-align: center;
@@ -257,9 +255,14 @@ nav {
 .portfolio {
   margin: 52px auto;
   width: 100%;
-  background-color: white;
   max-width: 1100px;
   text-align: center;
+}
+
+.projectcon {
+  width: 100%;
+  max-width: 1100px;
+  margin: auto;
 }
 
 .allprojects {
@@ -292,10 +295,6 @@ nav {
   margin: auto;
   display: flex;
   justify-content: space-around;
-
-}
-
-.conimg img {
 }
 
 /*footer*/
