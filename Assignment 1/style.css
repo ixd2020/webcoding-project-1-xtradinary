@@ -411,6 +411,24 @@ footer h6 {
   .worksgallery li:not(:last-child) {
     margin-right: 0;
   }
+  .contacthero {
+    background-image: url(img/contact600px.jpg);
+  }
+
+
+  .contactform {
+  flex-direction: column-reverse;
+  text-align: center;
+  }
+
+  .conimg {
+    display: flex;
+    justify-content: center;
+  }
+
+  .conform{
+    margin: 12px 0;
+  }
 
   footer {
     flex-direction: column-reverse;
