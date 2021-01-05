@@ -7,14 +7,12 @@
 
 /*body*/
 body {
-height: 100vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  overflow-y: hidden;
 }
-
-
-
 
 /*navbar*/
 nav {
@@ -109,7 +107,6 @@ footer {
 footer p {
   color: #0B0C0F;
   padding: 16px 32px;
-
 }
 
 .foot {
@@ -137,16 +134,13 @@ footer p {
   transition: 1s;
 }
 
-
 @media screen and (max-width:700px) {
+  .foot {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
 
-.foot {
-  flex-direction: column-reverse;
-  align-items: center;
-}
-
-.foot ul:last-child {
-  margin-bottom: 1em;
-}
-
+  .foot ul:last-child {
+    margin-bottom: 1em;
+  }
 }
