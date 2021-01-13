@@ -107,6 +107,7 @@ main {
   text-align: right;
 }
 
+/*subhero*/
 .subhero {
   display: flex;
   justify-content: space-between;
@@ -122,8 +123,7 @@ main {
   margin: 16px 0;
 }
 
-
-.subimg img{
+.subimg img {
   width: 100%;
 }
 
@@ -140,11 +140,9 @@ main {
   width: 75%;
 }
 
-
-
 /*pop*/
 .popular {
-  width:30%;
+  width: 30%;
   margin: 0 0 0 16px;
 }
 
